@@ -7,8 +7,8 @@ include /usr/share/dpkg/default.mk
 
 # Explicitly selecting a G{CC,++}-version here to avoid accidental
 # ABI breaks introduced by toolchain updates.
-export CC=$(DEB_HOST_GNU_TYPE)-gcc-4.9
-export CXX=$(DEB_HOST_GNU_TYPE)-g++-4.9
+export CC=$(DEB_HOST_GNU_TYPE)-gcc-7
+export CXX=$(DEB_HOST_GNU_TYPE)-g++-7
 
 %:
 	dh $@ --fail-missing
